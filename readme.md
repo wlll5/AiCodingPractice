@@ -25,6 +25,8 @@
 
 - <https://code.visualstudio.com/docs/copilot/chat/chat-sessions>
 
+这个项目提供了很多copilot的prompts,custom agents(稍后我再看看) : <https://github.com/github/awesome-copilot>
+
 ---
 
 ## Cursor 官方推荐的 Agent 实践
