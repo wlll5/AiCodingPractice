@@ -9,7 +9,7 @@
 ### 会话复用
 
 - 可以将 chat session 导出为 **JSON** 用于保存和复用（任务类似时）。
-- 可以将 chat session 导出为 **.prompt.md** 用于相似任务复用（输入 `/savePrompt`）。
+- 可以将 chat session 导出为 **.prompt.md** 用于相似任务复用（输入 `/savePrompt`）
 
 ### Subagent
 
@@ -21,11 +21,24 @@
   - Use a subagent to research the best authentication methods for web applications. Summarize the findings.
   - Run #runSubagent to research the user's task comprehensively using read-only tools. Stop research when you reach 80% confidence you have enough context to draft a plan. Return this context.
 
+### CustomAgent/.prompt.md
+
+- 在我看来这两者(特别是customagent)完全没有任何意义,其功能被 skills + instructions.md 完全包含了
+- 使用 / + promptName 使用存储的prompt.md (如上面的 /savePrompt)
+- 同理应该能用prompt.md实现总结对话的功能(但我认为不如使用skill)
+
+### AgentSkills
+
+
 参考：
 
 - <https://code.visualstudio.com/docs/copilot/chat/chat-sessions>
+- <https://code.visualstudio.com/docs/copilot/customization/agent-skills>
+- <https://code.visualstudio.com/docs/copilot/customization/custom-agents>
 
 这个项目提供了很多copilot的prompts,custom agents(稍后我再看看) : <https://github.com/github/awesome-copilot>
+
+我目前还是倾向于使用claude推出的标准(skills,mcp),而不是copilot自己的过时标准(比如.prompt.md 这本质上就是个降级版skill)
 
 ---
 
