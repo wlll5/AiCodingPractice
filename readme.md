@@ -6,6 +6,20 @@
 
 ## VS Code Copilot 实践
 
+### Spec-driven development
+参考链接:
+<https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/>
+<https://github.com/github/spec-kit?tab=readme-ov-file#-get-started>
+<https://github.com/github/spec-kit/blob/main/spec-driven.md>
+
+- 使用总结:
+ - /speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements
+ - /speckit.specify command to describe what you want to build. Focus on the what and why, not the tech stack 
+ - /speckit.clarify Identify underspecified areas in the current feature spec by asking up to 5 highly targeted clarification questions and encoding answers back into the spec. (不需要额外提示词)
+ - /speckit.plan command to provide your tech stack and architecture choices
+ - /speckit.tasks to create an actionable task list from your implementation plan (不需要额外提示词)
+ - /speckit.implement to execute all tasks and build your feature according to the plan
+
 ### 会话复用
 
 - 可以将 chat session 导出为 **JSON** 用于保存和复用（任务类似时）。
