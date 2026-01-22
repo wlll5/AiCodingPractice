@@ -13,12 +13,15 @@
 <https://github.com/github/spec-kit/blob/main/spec-driven.md>
 
 - 使用总结:
- - /speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements
- - /speckit.specify command to describe what you want to build. Focus on the what and why, not the tech stack 
+ - /speckit.constitution create your project's governing principles and development guidelines that will guide all subsequent development
+   - eg./speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements
+ - /speckit.specify describe what you want to build. Focus on the what and why, not the tech stack
+   - eg. /speckit.specify Build an application that can help me organize my photos in separate photo albums. Albums are grouped by date and can be re-organized by dragging and dropping on the main page. Albums are never in other nested albums. Within each album, photos are previewed in a tile-like interface.
  - /speckit.clarify Identify underspecified areas in the current feature spec by asking up to 5 highly targeted clarification questions and encoding answers back into the spec. (不需要额外提示词)
- - /speckit.plan command to provide your tech stack and architecture choices
+ - /speckit.plan provide your tech stack and architecture choices
+   - eg. /speckit.plan The application uses Vite with minimal number of libraries. Use vanilla HTML, CSS, and JavaScript as much as possible. Images are not uploaded anywhere and metadata is stored in a local SQLite database.
  - /speckit.tasks to create an actionable task list from your implementation plan (不需要额外提示词)
- - /speckit.implement to execute all tasks and build your feature according to the plan
+ - /speckit.implement to execute all tasks and build your feature according to the plan (不需要额外提示词)
 
 ### 会话复用
 
