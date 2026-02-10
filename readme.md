@@ -1,6 +1,8 @@
 # AI Coding Practice
 
-因为我目前主要使用 VS Code Copilot，所以重点会聚焦在 Copilot 提供的方法上；对于其他工具（Claude Code、Cursor...），重点放在它们提供的 workflow 思路，以及 Copilot 中对应的功能（如果 Copilot 目前没有这个功能，只能期望后续更新）。
+因为我目前主要使用 VS Code Copilot，所以重点会聚焦在 Copilot 提供的方法上；对于其他工具（Claude Code、Cursor...），重点放在它们提供的 workflow 思路，以及 Copilot 中对应的功能(如果 Copilot 目前没有这个功能，只能期望后续更新)
+
+对比了一下copilot和claude code extension,老实说copilot确实是有点拉了.由于我云开发机不好直接用claude code cli,先用extension吧.
 
 ---
 ## 个人经验
@@ -11,6 +13,16 @@ ai coding目前来看还是你对他敷衍,他就对你敷衍.越是希望简单
 在明确了prd后,不妨再开一个新的session,来根据prd生成代码.尽可能避免上一个session讨论造成ai的注意力失调
 
 copilot的plan mode非常垃圾,不要用,直接用agent就行了
+
+
+### claude code cli vs extension
+| Feature | CLI | VS Code Extension |
+|---------|-----|-------------------|
+| Commands and skills | All | Subset (type / to see available) |
+| MCP server config | Yes | No (configure via CLI, use in extension) |
+| Checkpoints | Yes | Yes |
+| ! bash shortcut (run bash command) | Yes | No |  
+| Tab completion | Yes | No |
 ## VS Code Copilot 实践
 
 ### Spec-driven development
