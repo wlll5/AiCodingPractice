@@ -1,8 +1,10 @@
 # AI Coding Practice
 
-因为我目前主要使用 VS Code Copilot，所以重点会聚焦在 Copilot 提供的方法上；对于其他工具（Claude Code、Cursor...），重点放在它们提供的 workflow 思路，以及 Copilot 中对应的功能(如果 Copilot 目前没有这个功能，只能期望后续更新)
+~~因为我目前主要使用 VS Code Copilot，所以重点会聚焦在 Copilot 提供的方法上；对于其他工具（Claude Code、Cursor...），重点放在它们提供的 workflow 思路，以及 Copilot 中对应的功能(如果 Copilot 目前没有这个功能，只能期望后续更新)~~
 
-对比了一下copilot和claude code extension,老实说copilot确实是有点拉了.由于我云开发机不好直接用claude code cli,先用extension吧.
+~~对比了一下copilot和claude code extension,老实说copilot确实是有点拉了.由于我云开发机不好直接用claude code cli,先用extension吧.~~
+
+我放弃了,老实用claude code cli吧.之前由于我一直没有尝试过,导致我对于claude code cli总有戒备(之前用过codex cli,感觉效果也就那样).试了一会后,claude code cli的体验确实是最好的.虽然在云开发机上配环境麻烦了一些,不过整体体验相比ide插件要好.之前我总觉得使用cli就意味着完全放弃了参与代码,实际上完全可以在ide旁边开一个claude code cli,其本身也和ide有联动.
 
 ---
 ## 个人经验
@@ -23,9 +25,9 @@ copilot的plan mode非常垃圾,不要用,直接用agent就行了
 | Checkpoints | Yes | Yes |
 | ! bash shortcut (run bash command) | Yes | No |  
 | Tab completion | Yes | No |
-## VS Code Copilot 实践
 
-### Spec-driven development
+
+## Spec-driven development
 参考链接:
 <https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/>
 <https://github.com/github/spec-kit?tab=readme-ov-file#-get-started>
@@ -41,6 +43,10 @@ copilot的plan mode非常垃圾,不要用,直接用agent就行了
    - eg. /speckit.plan The application uses Vite with minimal number of libraries. Use vanilla HTML, CSS, and JavaScript as much as possible. Images are not uploaded anywhere and metadata is stored in a local SQLite database.
  - /speckit.tasks to create an actionable task list from your implementation plan (不需要额外提示词)
  - /speckit.implement to execute all tasks and build your feature according to the plan (不需要额外提示词)
+
+## CLAUDE CODE 实践
+
+## VS Code Copilot 实践
 
 ### 会话复用
 
@@ -85,8 +91,6 @@ vscode copilot目前最大的问题还是agent模式用起来并不太舒服.我
  - 用户输入简单的指令 -> ai自行理解需求 -> ai自动从项目中获取所需的上下文 -> 上下文不足时(指在项目内找不到),不进行文件的修改 -> 向用户询问请求上下文 -> ai向用户描述它的计划和将修改的文件,等待用户批准
 
 虽然这不够vibe,不过实际开发中这样还是更加保险.然而现在的问题是copilot无法给我这样的体验,它总是倾向于尽快给出回复,而不是完整的搜索代码库获取上下文.进一步导致了对于需求的理解也不够理想.即便使用instruction.md进行全局约束,其效果也无法让人满意
-
----
 
 ## Cursor 官方推荐的 Agent 实践
 
