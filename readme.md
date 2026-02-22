@@ -45,7 +45,23 @@ copilot的plan mode非常垃圾,不要用,直接用agent就行了
  - /speckit.implement to execute all tasks and build your feature according to the plan (不需要额外提示词)
 
 ## CLAUDE CODE 实践
-
+├── .claude/
+│   ├── CLAUDE.md           # 主项目说明
+│   ├── settings.json       # 项目设置（hooks、权限等）
+│   ├── settings.local.json # 本地设置（不提交到 git）
+│   ├── rules/              # 模块化规则文件
+│   │   ├── code-style.md   # 代码风格指南
+│   │   ├── testing.md      # 测试约定
+│   │   └── security.md     # 安全要求
+│   ├── skills/             # 自定义技能
+│   │   └── fix-issue/
+│   │       └── SKILL.md
+│   ├── agents/             # 自定义 subagents
+│   │   └── security-reviewer.md
+│   └── commands/           # 自定义斜杠命令（旧格式，仍支持）
+│       └── review.md
+├── CLAUDE.md               # 项目根目录的说明（可选）
+└── CLAUDE.local.md         # 个人项目偏好（自动加入 .gitignore）
 ## VS Code Copilot 实践
 
 ### 会话复用
