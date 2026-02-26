@@ -16,6 +16,8 @@ ai coding目前来看还是你对他敷衍,他就对你敷衍.越是希望简单
 
 copilot的plan mode非常垃圾,不要用,直接用agent就行了
 
+## Spec-driven development
+使用speckit进行开发,详见speckit.md
 
 ### claude code cli vs extension
 | Feature | CLI | VS Code Extension |
@@ -27,22 +29,7 @@ copilot的plan mode非常垃圾,不要用,直接用agent就行了
 | Tab completion | Yes | No |
 
 
-## Spec-driven development
-参考链接:
-<https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/>
-<https://github.com/github/spec-kit?tab=readme-ov-file#-get-started>
-<https://github.com/github/spec-kit/blob/main/spec-driven.md>
 
-- 使用总结:
- - /speckit.constitution create your project's governing principles and development guidelines that will guide all subsequent development
-   - eg./speckit.constitution Create principles focused on code quality, testing standards, user experience consistency, and performance requirements
- - /speckit.specify describe what you want to build. Focus on the what and why, not the tech stack
-   - eg. /speckit.specify Build an application that can help me organize my photos in separate photo albums. Albums are grouped by date and can be re-organized by dragging and dropping on the main page. Albums are never in other nested albums. Within each album, photos are previewed in a tile-like interface.
- - /speckit.clarify Identify underspecified areas in the current feature spec by asking up to 5 highly targeted clarification questions and encoding answers back into the spec. (不需要额外提示词)
- - /speckit.plan provide your tech stack and architecture choices
-   - eg. /speckit.plan The application uses Vite with minimal number of libraries. Use vanilla HTML, CSS, and JavaScript as much as possible. Images are not uploaded anywhere and metadata is stored in a local SQLite database.
- - /speckit.tasks to create an actionable task list from your implementation plan (不需要额外提示词)
- - /speckit.implement to execute all tasks and build your feature according to the plan (不需要额外提示词)
 
 ## CLAUDE CODE 实践
 ├── .claude/
