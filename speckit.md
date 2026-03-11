@@ -35,7 +35,7 @@
 
 看需求类型
 
-  plan 阶段会生成 research.md、data-model.md、API                                       契约这些技术设计产物。对于"优化小程序美术"这种纯
+  plan 阶段会生成 research.md、data-model.md、API契约这些技术设计产物。对于"优化小程序美术"这种纯
   UI/视觉调整的需求，大概率不涉及数据模型和接口变更，plan 产出的大部分内容都是多余的。
   
   但 tasks 命令会读取 plan.md 作为输入来拆任务，所以：
@@ -49,7 +49,7 @@
 
 在 specify 这一步。                                                                 
   
-  /speckit.specify 接受自然语言描述作为输入，你在描述需求时直接告诉它参考哪个 skill     就行。比如：                                                                        
+  /speckit.specify 接受自然语言描述作为输入，你在描述需求时直接告诉它参考哪个 skill就行。比如:
   - 优化小程序 UI 美术风格，参考 /xxx-skill 的设计规范
 
   这样 skill 的约束会被写进 spec.md，后续 tasks 和 implement 都会自动遵循。
