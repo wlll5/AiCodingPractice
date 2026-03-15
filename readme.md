@@ -1,7 +1,6 @@
 # AI Coding Practice
 
 ~~因为我目前主要使用 VS Code Copilot，所以重点会聚焦在 Copilot 提供的方法上；对于其他工具（Claude Code、Cursor...），重点放在它们提供的 workflow 思路，以及 Copilot 中对应的功能(如果 Copilot 目前没有这个功能，只能期望后续更新)~~
-
 ~~对比了一下copilot和claude code extension,老实说copilot确实是有点拉了.由于我云开发机不好直接用claude code cli,先用extension吧.~~
 
 我放弃了,老实用claude code cli吧.之前由于我一直没有尝试过,导致我对于claude code cli总有戒备(之前用过codex cli,感觉效果也就那样).试了一会后,claude code cli的体验确实是最好的.虽然在云开发机上配环境麻烦了一些,不过整体体验相比ide插件要好.之前我总觉得使用cli就意味着完全放弃了参与代码,实际上完全可以在ide旁边开一个claude code cli,其本身也和ide有联动.
@@ -14,7 +13,7 @@ ai coding目前来看还是你对他敷衍,他就对你敷衍.越是希望简单
 
 在明确了prd后,不妨再开一个新的session,来根据prd生成代码.尽可能避免上一个session讨论造成ai的注意力失调
 
-copilot的plan mode非常垃圾,不要用,直接用agent就行了
+~~copilot的plan mode非常垃圾,不要用,直接用agent就行了~~
 
 ## Spec-driven development
 使用speckit进行开发,详见speckit.md
@@ -32,6 +31,8 @@ copilot的plan mode非常垃圾,不要用,直接用agent就行了
 
 
 ## CLAUDE CODE 实践
+
+### 文件结构
 ├── .claude/
 │   ├── CLAUDE.md           # 主项目说明
 │   ├── settings.json       # 项目设置（hooks、权限等）
@@ -49,6 +50,10 @@ copilot的plan mode非常垃圾,不要用,直接用agent就行了
 │       └── review.md
 ├── CLAUDE.md               # 项目根目录的说明（可选）
 └── CLAUDE.local.md         # 个人项目偏好（自动加入 .gitignore）
+
+- claude code 同样支持创建自己的subagent用于给主agent调用,使用 /agent 命令来进入界面,并且支持引导创建subagent
+ - https://code.claude.com/docs/en/sub-agents#quickstart-create-your-first-subagent
+
 ## VS Code Copilot 实践
 
 ### 会话复用
@@ -71,6 +76,7 @@ copilot的plan mode非常垃圾,不要用,直接用agent就行了
 - 在我看来这两者(特别是customagent)完全没有任何意义,其功能被 skills + instructions.md 完全包含了
 - 使用 / + promptName 使用存储的prompt.md (如上面的 /savePrompt)
 - 同理应该能用prompt.md实现总结对话的功能(但我认为不如使用skill)
+- 虽然customAgent是史,但是和这个有些相似的claude code custom sub agent 我觉得或许有价值
 
 ### AgentSkills
 
